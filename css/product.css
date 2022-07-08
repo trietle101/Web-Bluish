@@ -1,0 +1,146 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(1/deftone-stylus.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F6E9;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    padding: 40px 200px;
+    z-index: 1000;
+    transition: 0.6s;
+    padding: 5px 200px;
+    background: #131E60;
+    opacity: 0.9;
+}
+header>.logo{
+    height: 80px;
+    padding-right: 1000px;
+}
+header>ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 400px;
+}
+header>ul>li{
+    list-style: none;
+}
+header>ul>li>a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: larger;
+    font-weight: 500px;
+    padding: 10px 10px;;
+}
+header>ul>li>a:hover {
+    color: #FFB319;
+}
+article{
+    min-height: 35vh;
+    padding-top: 150px;
+}    
+.prod{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    font-size: 70px;
+    font-family: myFirstFont;
+    color: #131E60;
+    background-color: #F8F6E9;   
+}
+#products{
+    width: 85%;
+    min-height: 70vh;
+    float: left;
+    background-color: #F8F6E9;
+}
+#products>.column{
+    width: 25%;
+    float: left;
+    padding: 80px 0 0 100px;
+}
+#products>.column>.san-pham{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+#products>.column>.san-pham:hover{
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+}
+#products>.column>.san-pham>.ten{
+    font-size: larger;
+    font-variant: small-caps;
+    color: #131E60;
+}
+#products>.column>.san-pham>img{
+    max-width: 55%;
+}
+#products>.column>.san-pham>.gia{
+    color: #131E60;
+    font-weight: bold;
+    font-size: larger;
+}
+#products>.column>.san-pham>.tag{
+    position:absolute;
+    margin:0;
+    padding:10px 20px ;
+    background-color: #131E60;
+    color : #FFB319;
+    left: 150px;
+    top: 100px;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.4s;
+    transform:translateY(40px);
+    visibility:hidden;
+}
+#products>.column>.san-pham>img:hover + .tag{
+    opacity: 1;
+    transform:translateY(0);
+    visibility:visible
+}
+aside{
+    height: 600px;
+    width: 15%;
+    float: right;
+    background-color: #FFB319;
+    padding-top: 0px;
+}
+aside>ul{
+    padding-top: 30px;
+    
+}
+aside>ul>li{
+    list-style: none;
+    padding-top: 20px;
+    position: sticky;
+}
+aside>ul>li>a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #131E60;
+    letter-spacing: 2px;
+    font-size: larger;
+    padding: 20px 10px;
+    line-height: 40px;
+}
+aside>ul>li>a:hover{
+    text-decoration: underline; 
+}
